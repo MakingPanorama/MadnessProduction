@@ -1,0 +1,116 @@
+"DOTAAbilities"
+{
+	//-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+	// Creator: DDSuper
+	// Data Create: 20.02.2020
+	// Version: 1.2
+	//-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0
+	"custom_boom"
+	{
+		"BaseClass"             		"ability_datadriven"
+		"AbilityTextureName"			"ursa_earthshock"
+		"MaxLevel" 						"7" 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"RequiredLevel"					"6 12 18 24 30 36 42"
+		"AbilityCastRange"				"450 660 780 910 1000 1500"
+		"AbilityCastPoint"				"0.3"
+		"FightRecapLevel"				"1"
+		"AbilityCooldown"				"50 50 50 50 50 30 14"
+		"AbilityManaCost"				"200 150 250 300 350 100 50"				
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+
+
+		"precache"
+		{
+			"particle"  "particles/units/heroes/hero_ursa/ursa_earthshock.vpcf"
+			"soundfile" "soundevents/game_sounds_heroes/game_sounds_ursa.vsndevts"
+		}
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER" // Added
+				"damage_bonus"			"300 450 500 530 600 700 799" // Added
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT" // Added
+				"chance"		"20 25 30 35 40 45 50" // Added
+			}
+			"03"
+			{
+				"var_type"	"FIELD_INTEGER" // Added
+				"radius"	"450 660 780 910 1000 2000" // Added
+			}
+		}
+		"OnSpellStart"
+		{
+			"ActOnTargets"
+			{
+				"Target"
+				{
+					"Center"  	"CASTER"
+					"Radius" 	"%radius"
+					"Teams" 	"DOTA_UNIT_TARGET_TEAM_ENEMY"
+					"Types" 	"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+				
+				}
+				"Action"    
+				{
+					"Damage"
+					{
+						"Target"		"TARGET"
+						"Type"			"DAMAGE_TYPE_MAGICAL"
+						"Damage"		"%damage_bonus"
+					}	
+				}
+			}
+			"AttachEffect"
+			{
+				"EffectName"        "particles/units/heroes/hero_ursa/ursa_earthshock.vpcf"
+				"EffectAttachType"  "attach_origin"
+				"Target"            "CASTER"
+
+				"ControlPoints"
+				{
+					"00"	"0 0 0"
+					"01"	"%radius 0 150"
+				}
+			}
+			"FireSound"
+			{
+				"EffectName"	"Hero_Ursa.Earthshock"
+				"Target" 		"CASTER"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastGestureSlot"		"ABSOLUTE"
+	}
+	
+}
+//----------------------------------------\\\\\
+// Changes Skill
+//----
+  //---------------------------------------------------------/////
+ //\\	C H A N G E - L O G: 2 6 . 02 . 2 0 2 0(26.02.2020)
+//	//-------------------------\\\\\
+//	//	Maxlevel changed 1 to 7
+//	//	Now this active ability
+//	// 	Chance changed with 20 to 20 25 30 35 40 45 50
+//	//	Radius changed with 450 to 450 660 780 910 1000 2000
+//	//	Damage changed with ? to 300 450 500 530 600 700 799
+//	//	Added Sound 
+//	//	Act Ability cast 1
+//	//	Added Required Level with 0 to 6 12 18 24 30 36 42
+//	// 	Added Cast point to 0.3
+//	// 	Added SpellImmunityType: SPELL_IMMUNITY_ENEMIES_YES
+//	// 	
+//	//-------C--U--R--R--E--N--T---V--E--R--S--I--O--N---1.2----\\\\\\
+
+
+//---------------------------------------------------------------------------------------\\\

@@ -1,0 +1,57 @@
+"CM"                            //Ice Charmer
+{
+	"override_hero"				"npc_dota_hero_crystal_maiden"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"	
+	"ArmorPhysical"				"0"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.6"
+	"AttackAnimationPoint"		"0.45"
+	"AttackDamageMin"			"35"
+	"AttackDamageMax"			"40"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"600"
+        "ProjectileModel"		    "particles/units/heroes/hero_drow/drow_frost_arrow.vpcf"
+        "ProjectileSpeed"		    "1200"
+        
+        "Role"			            "Support,Disabler,Nuker"
+	"Rolelevels"	            "2,2,2"
+        "Complexity"	            "2"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_INTELLECT"
+	"AttributeBaseStrength"			 "17"
+	"AttributeStrengthGain"			 "2.2"
+	"AttributeBaseIntelligence"		 "34"
+	"AttributeIntelligenceGain"		 "5.75"
+	"AttributeBaseAgility"			 "30"
+	"AttributeAgilityGain"			 "4.4"
+
+	"MovementSpeed"				     "285"
+	"MovementTurnRate"			     "1.0"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				     "460"
+	"StatusMana"				     "180"	
+	"ModelScale"				     "0.75"
+	"StatusHealthRegen"			     "1.7"
+	"StatusManaRegen"			     "3.4"
+        
+        "Ability1"                       "Ice_Nova"
+        "Ability2"                       "Ice_Breath" 
+        "Ability3"                       "Mana_Trade"
+        "Ability4"                       "Ice_Ball"
+        "Ability5"                       "Ice_Aegis"
+        "Ability6"                       "Frost_Fire"
+        "Ability7"                       "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}

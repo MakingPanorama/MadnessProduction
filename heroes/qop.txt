@@ -1,0 +1,56 @@
+"QOP"                            //Nightmare
+{
+	"override_hero"				"npc_dota_hero_queenofpain"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"	
+	"ArmorPhysical"				"-4"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.45"
+	"AttackAnimationPoint"		"0.1"
+	"AttackDamageMin"			"25"
+	"AttackDamageMax"			"65"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"675"
+        "ProjectileSpeed"		    "4000"
+        
+        "Role"			            "Carry,Disabler,Durable,Nuker"
+	"Rolelevels"	            "2,1,3,2"
+        "Complexity"	            "2"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_INTELLECT"
+	"AttributeBaseStrength"			 "24"
+	"AttributeStrengthGain"			 "2.6"
+	"AttributeBaseIntelligence"		 "31"
+	"AttributeIntelligenceGain"		 "7.2"
+	"AttributeBaseAgility"			 "25"
+	"AttributeAgilityGain"			 "3.3"
+
+	"MovementSpeed"				     "275"
+	"MovementTurnRate"			     "1.9"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				     "545"
+	"StatusMana"				     "90"	
+	"ModelScale"				     "0.85"
+	"StatusHealthRegen"			     "2.45"
+	"StatusManaRegen"			     "2.4"
+        
+        "Ability1"                       "Torture_for_Pleasure"
+        "Ability2"                       "Sadism_Spirit" 
+        "Ability3"                       "Ghost_Soul"
+        "Ability4"                       "Death_Tornado"
+        "Ability5"                       "Deep_Pain"
+        "Ability6"                       "Nightmare_Demon"
+        "Ability7"                       "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}

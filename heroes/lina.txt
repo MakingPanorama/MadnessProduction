@@ -1,0 +1,57 @@
+"Lina"                            //Flame Bringer
+{
+	"override_hero"				"npc_dota_hero_lina"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"	
+	"ArmorPhysical"				"-4"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.4"
+	"AttackAnimationPoint"		"0.275"
+	"AttackDamageMin"			"20"
+	"AttackDamageMax"			"25"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"725"
+        "ProjectileModel"		    "particles/econ/items/clinkz/clinkz_maraxiform/clinkz_maraxiform_searing_arrow.vpcf"  
+        "ProjectileSpeed"		    "2000"
+        
+        "Role"			            "Carry,Disabler,Nuker"
+	"Rolelevels"	            "2,3,3"
+        "Complexity"	            "3"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_INTELLECT"
+	"AttributeBaseStrength"			 "20"
+	"AttributeStrengthGain"			 "2.75"
+	"AttributeBaseIntelligence"		 "41"
+	"AttributeIntelligenceGain"		 "5.25"
+	"AttributeBaseAgility"			 "22"
+	"AttributeAgilityGain"			 "3.45"
+
+	"MovementSpeed"				     "370"
+	"MovementTurnRate"			     "1.15"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				     "390"
+	"StatusMana"				     "145"	
+	"ModelScale"				     "0.8"
+	"StatusHealthRegen"			     "1.4"
+	"StatusManaRegen"			     "3.0"
+        
+        "Ability1"                       "Flame_Strike"
+        "Ability2"                       "Flame_Array"
+        "Ability3"                       "Falling_Down"
+        "Ability4"                       "From_Hell"
+        "Ability5"                       "Flame_Spirit"       
+        "Ability6"                       "Gate_of_Hell"
+        "Ability7"                       "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}

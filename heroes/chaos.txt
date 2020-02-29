@@ -1,0 +1,57 @@
+"Chaos"                         //Acheron Knight
+{
+	"override_hero"				"npc_dota_hero_chaos_knight"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"	
+	"ArmorPhysical"				"-4"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.6"
+	"AttackAnimationPoint"		"0.500"
+	"AttackDamageMin"			"5"
+	"AttackDamageMax"			"85"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"130"
+        
+        "Role"			            "Carry,Nuker,Disabler"
+	"Rolelevels"	            "2,1,2"
+        "Complexity"	            "2"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_STRENGTH"
+	"AttributeBaseStrength"			 "29"
+	"AttributeStrengthGain"			 "6.4"
+	"AttributeBaseIntelligence"		 "21"
+	"AttributeIntelligenceGain"		 "2.1"
+	"AttributeBaseAgility"			 "22"
+	"AttributeAgilityGain"			 "3.0"
+
+	"MovementSpeed"				     "290"
+	"MovementTurnRate"			     "1.3"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				"615"
+	"StatusMana"				"100"	
+	"ModelScale"				"1.1"
+	"StatusHealthRegen"			"2.4"
+	"StatusManaRegen"			"1.0"
+         
+        
+        
+        "Ability1"                  "Acheron_Blade"
+        "Ability2"                  "Acheron_Assault" 
+        "Ability3"                  "Chaos_Wave" 
+        "Ability4"                  "Chaos_Panic_Rain"
+        "Ability5"                  "Death_Strike"
+        "Ability6"                  "Spirit_Plunder"
+        "Ability7"                  "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}

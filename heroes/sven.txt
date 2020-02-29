@@ -1,0 +1,55 @@
+"Sven"                          //Cleaver Rogue
+{
+	"override_hero"				"npc_dota_hero_sven"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"	
+	"ArmorPhysical"				"-3"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.65"
+	"AttackAnimationPoint"		"0.550"
+	"AttackDamageMin"			"25"
+	"AttackDamageMax"			"35"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"130"
+        
+        "Role"			            "Carry,Nuker,Disabler"
+	"Rolelevels"	            "2,3,1"
+        "Complexity"	            "1"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_STRENGTH"
+	"AttributeBaseStrength"			 "26"
+	"AttributeStrengthGain"			 "6.0"
+	"AttributeBaseIntelligence"		 "23"
+	"AttributeIntelligenceGain"		 "2.75"
+	"AttributeBaseAgility"			 "20"
+	"AttributeAgilityGain"			 "2.2"
+
+	"MovementSpeed"				     "270"
+	"MovementTurnRate"			     "1.15"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				"520"
+	"StatusMana"				"100"	
+	"ModelScale"				"0.75"
+	"StatusHealthRegen"			"2.1"
+	"StatusManaRegen"			"1.5"
+             
+        "Ability1"                  "Cleaver_Shockwave" 
+        "Ability2"                  "Cleaver_Array"
+        "Ability3"                  "Blood_Coercion"
+        "Ability4"                  "Cleaver_For_God"
+        "Ability5"                  "Cleaver_For_Demon" 
+        "Ability6"                  "War_Holdout"
+        "Ability7"                  "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}

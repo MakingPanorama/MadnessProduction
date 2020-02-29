@@ -1,0 +1,57 @@
+"TA"                            //Templar Warrior
+{
+	"override_hero"				"npc_dota_hero_templar_assassin"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"	
+	"ArmorPhysical"				"-4"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.35"
+	"AttackAnimationPoint"		"0.2400"
+	"AttackDamageMin"			"40"
+	"AttackDamageMax"			"65"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"400"
+        "ProjectileModel"		    "particles/units/heroes/hero_templar_assassin/templar_assassin_meld_attack.vpcf"
+	"ProjectileSpeed"		    "1500"
+        
+        "Role"			            "Carry,Disabler,Durable"
+	"Rolelevels"	            "2,2,3"
+        "Complexity"	            "2"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_AGILITY"
+	"AttributeBaseStrength"			 "21"
+	"AttributeStrengthGain"			 "2.5"
+	"AttributeBaseIntelligence"		 "23"
+	"AttributeIntelligenceGain"		 "1.6"
+	"AttributeBaseAgility"			 "26"
+	"AttributeAgilityGain"			 "6.75"
+
+	"MovementSpeed"				     "285"
+	"MovementTurnRate"			     "1.35"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				     "485"
+	"StatusMana"				     "100"	
+	"ModelScale"				     "0.85"
+	"StatusHealthRegen"			     "1.6"
+	"StatusManaRegen"			     "1.0"
+        
+        "Ability1"                       "Templar_Benediction"
+        "Ability2"                       "Guilty_Punishment"
+        "Ability3"                       "Templar_Ward"
+        "Ability4"                       "Psychic_Wave"
+        "Ability5"                       "Psionic_Gift"       
+        "Ability6"                       "Templar_Blood"
+        "Ability7"                       "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}

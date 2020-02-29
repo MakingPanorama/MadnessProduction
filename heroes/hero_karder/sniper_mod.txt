@@ -1,0 +1,175 @@
+"DOTAAbilities"
+{	
+	"gun_toggle"
+	{
+		//------------------------------------------------------------
+		// Author: DDSuper											//
+		// Data: 11.09.2019										   //
+		// Skill: Sniper Mod 									  //
+		//---------------------------------------------------------
+		"BaseClass"		"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"AbilityTextureName"		"sniper_assassinate"
+		"MaxLevel"		"7"
+		"RequiredLevel"		"1"
+		"LevelsBetweenUpgrades"		"3"
+		"FightRecapLevel"		"1"
+
+		"precache"
+		{
+			"soundfile"					"soundevents/game_sounds_heroes/game_sounds_sniper.vsndevts"
+			"particle"					"particles/units/heroes/hero_sniper/sniper_assassinate.vpcf"
+			"particle"					"particles/units/heroes/hero_sniper/sniper_crosshair.vpcf"
+		}
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"dmg_bonus"		"150 200 250 300 350 400 450"
+			}
+			"02"
+			{	
+				"var_type"		"FIELD_FLOAT"
+				"bat"		"2.20 2.00 1.90 1.85 1.80 1.70 1.60"
+			}
+			"03"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"ar_bonus"		"300 450 600 950 1200 1400 1600"
+			}
+			"04"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"bonus_d_v"		"50 100 150 200 250 300 390"
+			}
+			"05"
+			{
+				"var_type"		"FIELD_INTEGER"
+				"bonus_n_v"		"100 200 300 400 500 600 700"
+			}
+			"06"
+			{
+				"var_type"	"FIELD_INTEGER"
+				"reload"	"-100000"
+			}
+		}
+		"OnToggleOn"
+		{
+			"ApplyModifier"
+			{
+				"ModifierName"	"modifier_phantom_assassin_adrenaline"
+				"Target"		"CASTER"
+			}
+			"FireSound"
+			{
+				"EffectName"	"Ability.AssassinateLoad"
+				"Target" 		"CASTER"
+			}
+		}	
+	
+		"OnToggleOff"
+		{
+			"RemoveModifier"
+			{
+				"ModifierName"	"modifier_phantom_assassin_adrenaline"
+				"Target"		"CASTER"
+			}
+			"FireSound"
+			{
+				"EffectName"	"Ability.AssassinateLoad"
+				"Target" 		"CASTER"
+			}
+		}
+		"Modifiers"
+		{
+			"modifier_phantom_assassin_adrenaline"
+			{
+				"Passive"		"0"
+				"IsBuff"		"0"
+				"IsDebuff"		"0"
+				"IsHidden"		"0"
+				"IsPurgable"		"0"
+
+				"OnAttack"
+				{
+					"RunScript"
+					{
+						"ScriptFile"	"attacparticle"
+						"Function"		"AttackEffect"
+					}
+					"FireSound"
+					{
+						"EffectName"	"Hero_Sniper.AssassinateProjectile"
+						"Target" 		"TARGET"
+					}
+					"FireSound"
+					{
+						"EffectName"	"Ability.Assassinate"
+						"Target" 		"CASTER"
+					}
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_reload"
+						"Target" 		"CASTER"
+						"Duration"		"0.8"
+					}
+					"FireSound"
+					{
+						"EffectName"	"Hero_Sniper.Assassinate_Damage"
+						"Target" 		"TARGET"
+					}
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT"		"%bat"
+					"MODIFIER_PROPERTY_BASEDAMAGEOUTGOING_PERCENTAGE"		"%dmg_bonus"
+					"MODIFIER_PROPERTY_ATTACK_RANGE_BONUS"		"%ar_bonus"
+					"MODIFIER_PROPERTY_BONUS_DAY_VISION"		"%bonus_d_v"
+					"MODIFIER_PROPERTY_BONUS_NIGHT_VISION"		"%bonus_n_v"
+				}
+				"States"
+				{
+					"MODIFIER_STATE_ROOTED"	"MODIFIER_STATE_VALUE_ENABLED"
+				}
+			}
+			"modifier_reload"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"OnDestroy"
+				{
+					"ApplyModifier"
+					{
+						"ModifierName"	"modifier_reload_0_1"
+						"Target" 		"CASTER"
+						"Duration"		"0.2"
+					}
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%reload"
+				}
+			}
+			"modifier_reload_0_1"
+			{
+				"Passive"			"0"
+				"IsHidden"			"1"
+				"IsDebuff"			"0"
+			
+				"OnCreated"
+				{
+					"FireSound"
+					{
+						"EffectName"	"Ability.AssassinateLoad"
+						"Target" 		"CASTER"
+					}
+				}
+				"Properties"
+				{
+					"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT" "%reload"
+				}
+			}
+		}
+	}
+}		

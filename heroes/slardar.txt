@@ -1,0 +1,55 @@
+"Slardar"                            //Ocean Guardian
+{
+	"override_hero"				"npc_dota_hero_slardar"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"	
+	"ArmorPhysical"				"-1"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.7"
+	"AttackAnimationPoint"		"0.600"
+	"AttackDamageMin"			"30"
+	"AttackDamageMax"			"45"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"130"
+        
+        "Role"			            "Disabler,Durable"
+	"Rolelevels"	            "3,2"
+        "Complexity"	            "2"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_STRENGTH"
+	"AttributeBaseStrength"			 "34"
+	"AttributeStrengthGain"			 "7.2"
+	"AttributeBaseIntelligence"		 "22"
+	"AttributeIntelligenceGain"		 "1.85"
+	"AttributeBaseAgility"			 "17"
+	"AttributeAgilityGain"			 "2.4"
+
+	"MovementSpeed"				     "270"
+	"MovementTurnRate"			     "0.9"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				"785"
+	"StatusMana"				"100"	
+	"ModelScale"				"0.8"
+	"StatusHealthRegen"			"3.2"
+	"StatusManaRegen"			"0.7"
+         
+        "Ability1"                  "Deep_Thump"
+        "Ability2"                  "Rage_Spirit" 
+        "Ability3"                  "Armor_Loots"
+        "Ability4"                  "Ocean_Arrays"
+        "Ability5"                  "Heavy_Basher" 
+        "Ability6"                  "Ocean_Heart"
+        "Ability7"                  "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}

@@ -1,0 +1,55 @@
+"PA"                            //Shadow Killer
+{
+	"override_hero"				"npc_dota_hero_phantom_assassin"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"	
+	"ArmorPhysical"				"-3"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.48"
+	"AttackAnimationPoint"		"0.3000"
+	"AttackDamageMin"			"25"
+	"AttackDamageMax"			"40"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"130"
+        
+        "Role"			            "Carry,Nuker,Disabler"
+	"Rolelevels"	            "2,2,1"
+        "Complexity"	            "1"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_AGILITY"
+	"AttributeBaseStrength"			 "19"
+	"AttributeStrengthGain"			 "1.8"
+	"AttributeBaseIntelligence"		 "25"
+	"AttributeIntelligenceGain"		 "2.85"
+	"AttributeBaseAgility"			 "32"
+	"AttributeAgilityGain"			 "6.25"
+
+	"MovementSpeed"				     "320"
+	"MovementTurnRate"			     "1.9"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				"340"
+	"StatusMana"				"200"	
+	"ModelScale"				"0.7"
+	"StatusHealthRegen"			"1.2"
+	"StatusManaRegen"			"1.9"
+        
+        "Ability1"                  "Fatal_Dagger"
+        "Ability2"                  "Weapon_Seal"
+        "Ability3"                  "Hunter_Sneak"
+        "Ability4"                  "Grace_For_Relief"
+        "Ability5"                  "Hazy_Cloak"       
+        "Ability6"                  "Venomous_Saber"
+        "Ability7"                  "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}

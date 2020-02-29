@@ -1,0 +1,57 @@
+"Zeus"                            //Thor
+{
+	"override_hero"				"npc_dota_hero_zuus"
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"	
+	"ArmorPhysical"				"-4"	
+        "Level"                     "1"                          
+	"AttackRate"				"1.65"
+	"AttackAnimationPoint"		"0.5"
+	"AttackDamageMin"			"35"
+	"AttackDamageMax"			"50"
+	"AttackAcquisitionRange"	"800"
+	"AttackRange"				"375"
+        "ProjectileModel"		    "particles/units/heroes/hero_razor/razor_base_attack.vpcf"
+        "ProjectileSpeed"		    "700"
+        
+        "Role"			            "Durable,Nuker"
+	"Rolelevels"	            "2,3"
+        "Complexity"	            "2"
+
+	"AttributePrimary"			     "DOTA_ATTRIBUTE_INTELLECT"
+	"AttributeBaseStrength"			 "26"
+	"AttributeStrengthGain"			 "2.8"
+	"AttributeBaseIntelligence"		 "40"
+	"AttributeIntelligenceGain"		 "6.25"
+	"AttributeBaseAgility"			 "19"
+	"AttributeAgilityGain"			 "2.1"
+
+	"MovementSpeed"				     "270"
+	"MovementTurnRate"			     "1.35"
+	
+	"VisionNighttimeRange"			 "600"							
+	"VisionDaytimeRange"			 "800"
+
+	"MagicalResistance"			     "0"
+	
+	"StatusHealth"				     "445"
+	"StatusMana"				     "185"	
+	"ModelScale"				     "0.8"
+	"StatusHealthRegen"			     "2.2"
+	"StatusManaRegen"			     "3.3"
+        
+        "Ability1"                       "Parallel_Current"
+        "Ability2"                       "Concentrated_Voltage" 
+        "Ability3"                       "Annular_Lightning"
+        "Ability4"                       "Static_Barrier"
+        "Ability5"                       "August_of_Donar"
+        "Ability6"                       "Protection_Racket"
+        "Ability7"                       "Tower_Building"
+        "Ability10"     ""
+        "Ability11"     ""
+        "Ability12"     ""
+        "Ability13"     ""
+        "Ability14"     ""
+        "Ability15"     ""
+        "Ability16"     ""
+        "Ability17"     ""
+}
