@@ -3,7 +3,9 @@ Library Madness Production
 
 Note: You can use this skills for example: for your tutorial or help code
 
-(RUS)
+Some abilities will not be fully available.
+
+# (RUS) 
 
 # Безумное Производство
 Библиотека Безумного Производства
